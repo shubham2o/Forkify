@@ -2,9 +2,10 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/shubham2o/Forkify/issues"
   },
-  "homepage": "https://github.com/shubham2o/Forkify#readme"
+  "homepage": "https://github.com/shubham2o/Forkify#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  }
 }
