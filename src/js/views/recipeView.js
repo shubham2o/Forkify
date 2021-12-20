@@ -32,51 +32,51 @@ class RecipeView {
     #generateMarkup() {
         return `
         <figure class="recipe__fig">
-          <img src="$this.#dataimage}" alt="Tomato" class="recipe__img" />
-          <h1 class="recipe__title">
+            <img src="$this.#dataimage}" alt="Tomato" class="recipe__img" />
+            <h1 class="recipe__title">
             <span>$this.#datatitle}</span>
-          </h1>
+            </h1>
         </figure>
 
         <div class="recipe__details">
-          <div class="recipe__info">
-            <svg class="recipe__info-icon">
-              <use href="${icons}#icon-clock"></use>
-            </svg>
+            <div class="recipe__info">
+                <svg class="recipe__info-icon">
+                    <use href="${icons}#icon-clock"></use>
+                </svg>
             <span class="recipe__info-data recipe__info-data--minutes">$this.#datacookingTime}</span>
             <span class="recipe__info-text">minutes</span>
         </div>
         <div class="recipe__info">
             <svg class="recipe__info-icon">
-              <use href="${icons}#icon-users"></use>
+                <use href="${icons}#icon-users"></use>
             </svg>
             <span class="recipe__info-data recipe__info-data--people">$this.#dataservings}</span>
             <span class="recipe__info-text">servings</span>
 
             <div class="recipe__info-buttons">
-              <button class="btn--tiny btn--increase-servings">
-                <svg>
-                  <use href="${icons}#icon-minus-circle"></use>
-                </svg>
-              </button>
-              <button class="btn--tiny btn--increase-servings">
-                <svg>
-                  <use href="${icons}#icon-plus-circle"></use>
-                </svg>
-              </button>
+                <button class="btn--tiny btn--increase-servings">
+                    <svg>
+                        <use href="${icons}#icon-minus-circle"></use>
+                    </svg>
+                </button>
+                <button class="btn--tiny btn--increase-servings">
+                    <svg>
+                        <use href="${icons}#icon-plus-circle"></use>
+                    </svg>
+                </button>
             </div>
-          </div>
+        </div>
 
-          <div class="recipe__user-generated">
+        <div class="recipe__user-generated">
             <svg>
-              <use href="${icons}#icon-user"></use>
+                <use href="${icons}#icon-user"></use>
             </svg>
-          </div>
-          <button class="btn--round">
+        </div>
+        <button class="btn--round">
             <svg class="">
-              <use href="${icons}#icon-bookmark-fill"></use>
+                <use href="${icons}#icon-bookmark-fill"></use>
             </svg>
-          </button>
+        </button>
         </div>
 
         <div class="recipe__ingredients">
@@ -88,25 +88,21 @@ class RecipeView {
         </div>
 
         <div class="recipe__directions">
-        <h2 class="heading--2">How to cook it</h2>
-        <p class="recipe__directions-text">
-            This recipe was carefully designed and tested by
-            <span class="recipe__publisher">$this.#datapublisher}</span>. Please check out
-            directions at their website.
-          </p>
-          <a
-            class="btn--small recipe__btn"
-            href="$this.#datasourceUrl}"
-            target="_blank"
-          >
-            <span>Directions</span>
-            <svg class="search__icon">
-              <use href="${icons}#icon-arrow-right"></use>
-            </svg>
-          </a>
+            <h2 class="heading--2">How to cook it</h2>
+            <p class="recipe__directions-text">
+                This recipe was carefully designed and tested by
+                <span class="recipe__publisher">$this.#datapublisher}</span>. Please check out
+                directions at their website.
+            </p>
+            <a class="btn--small recipe__btn" href="$this.#datasourceUrl}" target="_blank"> 
+                <span>Directions</span> <svg class="search__icon">
+                    <use href="${icons}#icon-arrow-right"></use>
+                </svg>
+            </a>
         </div>
-  `;
+`;
     }
+
 
     #generateMarkupIngredient(ing)  {
         return `
@@ -122,5 +118,6 @@ class RecipeView {
         `;
     }
 }
+
 
 export default new RecipeView();
