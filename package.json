@@ -2,27 +2,20 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe application",
-  "main": "index.html",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shubham2o/Forkify.git"
-  },
-  "author": "Shubham Sharma",
+  "author": "Jonas Schedtmann",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shubham2o/Forkify/issues"
-  },
-  "homepage": "https://github.com/shubham2o/Forkify#readme",
   "devDependencies": {
-    "parcel": "^2.0.0-rc.0"
+    "parcel": "^2.0.0-beta.1",
+    "sass": "^1.26.10"
   },
   "dependencies": {
-    "core-js": "^3.20.0",
+    "core-js": "^3.6.5",
     "fractional": "^1.0.0",
-    "regenerator-runtime": "^0.13.9"
+    "regenerator-runtime": "^0.13.7"
   }
 }
